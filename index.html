@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sample App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- my css from the theme i created -->
+   <link rel="stylesheet" href="themes/my-theme.min.css" />
+    
+    <!-- css for icons -->
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    
+    <!-- jqm structure css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile.structure-1.4.3.min.css" />
+    
+    <!-- jquery files -->
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+   <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+</head>
+
+<body>
+    
+    <div data-role="page" id="home" >
+      <div data-role="header">
+        <h1>Android Tutorial</h1>
+      </div>
+      <div data-role="content" >
+      <img src="image/android-tutorial.jpeg" id="homeimage">  
+      	<h3>Introduction</h3>
+      	
+        <p>Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies.<br/><br/>
+
+This tutorial will teach you basic Android programming.<br/>
+
+<h3>Audience</h3>
+This tutorial has been prepared for the beginners to help them understand basic Android programming. After completing this tutorial you will find yourself at a moderate level of expertise in Android programming from where you can take yourself to next levels.<br/>
+
+<h3>Prerequisites</h3>
+Android programming is based on Java programming language so if you have basic understanding on Java programming then it will be a fun to learn Android application development.</p>
+        <a href="#listview" data-rel="dialog" data-role="button" data-theme="a"  data-iconpos="left">Start Tutorial</a>
+      </div>
+      <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div data-role="page" id="listview"  data-theme="a" data-rel="dialog" >
+      <div data-role="header">
+      <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+<!--
+      	
+-->
+      	
+        <h1>Step 1 of 5</h1>
+      </div>
+      <div data-role="content">
+        <div data-role="collapsible-set">
+        	<div data-role="collapsible" >
+            	<h3>In Android Studio, create a new project</h3>
+                <ul data-role="listview" data-theme="a">
+                    <li>If you don't have a project opened, in the Welcome screen, click New Project.</li>
+                    <li>If you have a project opened, from the File menu, select New Project.</li>
+                </ul>
+            </div>
+            <div data-role="collapsible" > 
+                <h3>Under Configure your new project, fill in the fields as shown in figure 1 and click Next.</h3>
+                <img src="image/studio-setup-1.png"></img>
+               
+                <ul data-role="listview" data-theme="a">
+                    <li>Application Name is the app name that appears to users. For this project, use "My First App."</li>
+                    <li>Company domain provides a qualifier that will be appended to the package name; Android Studio will remember this qualifier for each new project you create.</li>
+                    
+                    <li>Package name is the fully qualified name for the project (following the same rules as those for naming packages in the Java programming language). Your package name must be unique across all packages installed on the Android system. You can Edit this value independently from the application name or the company domain.</li>
+                    
+                    <li>Project location is the directory on your system that holds the project files.</li>
+                </ul>
+                
+         </div>
+         <div data-role="collapsible" >
+            	<h3>For Minimum SDK, select API 8: Android 2.2 (Froyo).</h3>
+                <p>The Minimum Required SDK is the earliest version of Android that your app supports, <br/>indicated using the API level. To support as many devices as possible, you should set this to the lowest version available that allows your app to provide its core feature set. If any feature of your app is possible only on newer versions of Android and it's not critical to the app's core feature set, you can enable the feature only when running on the versions that support it </p>
+                    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3>For Minimum SDK, select API 8: Android 2.2 (Froyo).</h3>
+                <p>The Minimum Required SDK is the earliest version of Android that your app supports, <br/>indicated using the API level. To support as many devices as possible, you should set this to the lowest version available that allows your app to provide its core feature set. If any feature of your app is possible only on newer versions of Android and it's not critical to the app's core feature set, you can enable the feature only when running on the versions that support it. Leave all of the other options (TV, Wear, and Glass) unchecked and click Next.</p>
+                    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3> Add an activity to Template </h3>
+               <p>Select Blank Activity and click Next.</p>    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3>Choose options for your new file,</h3>
+               <p>Change the Activity Name to MyActivity. The Layout Name changes to activity_my, and the Title to MyActivity. The Menu Resource Name is menu_my.
+                   Click the Finish button to create the project. </p>
+               
+            </div>
+        </div>
+            <p>Your Android project is now a basic "Hello World" app that contains some default files. </p>
+            <a href="#" data-rel="back" data-icon="back">Back</a>
+      	    <a href="#Step2" data-rel="dialog" data-icon="forward">Next</a>
+            
+
+      <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<div data-role="page" id="Step2"  data-theme="a">
+      <div data-role="header">
+      	<a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1>Step 2 of 5</h1>
+      </div>
+      <div data-role="content">
+    <p>Take a moment to review the most important of these: </p>
+     <div data-role="collapsible-set">
+        	<div data-role="collapsible" >
+            	<h3>app/src/main/res/layout/activity_my.xml</h3>
+                <p>This is the XML layout file for the activity you added when you created the project with Android Studio. Following the New Project workflow, Android Studio presents this file with both a text view and a preview of the screen UI. The file includes some default settings and a TextView element that displays the message, "Hello world!"</p>
+            </div>
+            <div data-role="collapsible" > 
+                <h3>app/src/main/java/com.mycompany.myfirstapp/MyActivity.java</h3>
+                <p>A tab for this file appears in Android Studio when the New Project workflow finishes. When you select the file you see the class definition for the activity you created. When you build and run the app, the Activity class starts the activity and loads the layout file that says "Hello World!"
+</p>
+               
+         </div>
+         <div data-role="collapsible" >
+            	<h3>app/src/main/AndroidManifest.xml</h3>
+                <p>The manifest file describes the fundamental characteristics of the app and defines each of its components. You'll revisit this file as you follow these lessons and add more components to your app.</p>
+                    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3>app/build.gradle</h3>
+                <p>Android Studio uses Gradle to compile and build your app. There is a build.gradle file for each module of your project, as well as a build.gradle file for the entire project. Usually, you're only interested in the build.gradle file for the module, in this case the app or application module.</p>
+                    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3> layout/ </h3>
+               <p>Directory for files that define your app's user interface like activity_my.xml, discussed above, which describes a basic layout for the MyActivity class.</p>    
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3>menu/</h3>
+               <p>Directory for files that define your app's menu items. </p>
+               
+            </div>
+            <div data-role="collapsible" >
+            	<h3>values/</h3>
+               <p>Directory for other XML files that contain a collection of resources, such as string and color definitions. The strings.xml file defines the "Hello world!" string that displays when you run the default app.</p>
+               
+            </div>
+            
+        </div>
+        <p>To run the app, continue to the next lesson</p>
+             <a href="#" data-rel="back" data-icon="back">Back</a>
+      		<a href="#Step3" data-rel="dialog" data-icon="forward">Next</a>
+      <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+
+    <div data-role="page" id="Step3"  data-theme="a">
+      <div data-role="header">
+      	<a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1>Step 3 of 5</h1>
+      </div>
+      <div data-role="content">
+    
+     <div data-role="collapsible-set">
+        	<div data-role="collapsible" >
+            	<h3>Set up your Device.</h3>
+                <ul data-role="listview" data-theme="a">
+                <li>Plug in your device to your development machine with a USB cable. If you're developing on Windows, you might need to install the appropriate USB driver for your device. For help installing drivers, see the OEM USB Drivers document.</li>
+                <li>Enable USB debugging on your device.</li>
+                </ul>
+            </div>
+            <div data-role="collapsible" > 
+                <h3>Run the app from Android Studio</h3>
+                 <ul data-role="listview" data-theme="a">
+               <li>Select one of your project's files and click Run from the toolbar</li>
+                <li>In the Choose Device window that appears, select the Choose a running device radio button, select your device, and click OK .</li>
+                </ul>
+         </div>
+         <div data-role="collapsible" >
+            	<h3>Run on Emulator</h3>
+               <ul data-role="listview" data-theme="a">
+                   <li>Create an AVD</li>
+                  <li>Launch the Android Virtual Device Manager
+                   In Android Studio, select Tools > Android > AVD Manager, or click the AVD Manager icon in the toolbar.</li>
+                   <img src="image/studio-avdmgr-firstscreen.png">
+                   <li>On the AVD Manager main screen (figure 1), click Create Virtual Device.</li>
+                   <li>In the Select Hardware window, select a device configuration, such as Nexus 6, then click Next.</li>
+                   <li>Select the desired system version for the AVD and click Next.</li>
+                   <li>Verify the configuration settings, then click Finish.</li>
+                   
+             </ul>
+                  
+                    
+               
+            </div>
+            
+             <a href="#" data-rel="back" data-icon="back">Back</a>
+      		<a href="#Step4" data-rel="dialog" data-icon="forward">Next</a>
+      <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+</div>
+        <div data-role="page" id="Step4"  data-theme="a">
+      <div data-role="header">
+      <a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1>Step 4 of 5</h1>
+        
+      </div>
+      <div data-role="content">
+      <p>In this lesson, you create a layout in XML that includes a text field and a button. In the next lesson, your app responds when the button is pressed by sending the content of the text field to another activity.</p>
+    <p>The graphical user interface for an Android app is built using a hierarchy of View and ViewGroup objects. View objects are usually UI widgets such as buttons or text fields. ViewGroup objects are invisible view containers that define how the child views are laid out, such as in a grid or a vertical list.</p>
+    <p>Android provides an XML vocabulary that corresponds to the subclasses of View and ViewGroup so you can define your UI in XML using a hierarchy of UI elements.
+        Layouts are subclasses of the ViewGroup. In this exercise, you'll work with a LinearLayout.</p>
+        
+        <img src="image/viewgroup.png">
+    
+     <div data-role="collapsible-set">
+        	<div data-role="collapsible">
+            	<h3>Create a Linear Layout</h3>
+                <ol data-role="listview" data-theme="a">
+                <li>In Android Studio, from the res/layout directory, open the activity_my.xml file.<br/>
+                <p>The BlankActivity template you chose when you created this project includes the activity_my.xml file with a RelativeLayout root view and a TextView child view.</p>
+                </li>
+                <li>In the Preview pane, click the Hide icon  to close the Preview pane.<br/>
+                    <p>In Android Studio, when you open a layout file, you’re first shown the Preview pane. Clicking elements in this pane opens the WYSIWYG tools in the Design pane. For this lesson, you’re going to work directly with the XML.</p>
+                </li>
+                <li>Delete the TextView element</li>
+                <li>Change the RelativeLayout element to LinearLayout.</li>
+                <li>Add the android:orientation attribute and set it to "horizontal".</li>
+                <li>Remove the android:padding attributes and the tools:context attribute.</li>
+                </ol>
+               
+               
+               
+               
+            </div>
+            
+            <div data-role="collapsible" > 
+                <h3>Add a Text Field</h3>
+                 <ol data-role="listview" data-theme="a">
+               <li>In the activity_my.xml file, within the LinearLayout element, define an EditText element with the id attribute set to @+id/edit_message.</li>
+               <li>Define the layout_width and layout_height attributes as wrap_content</li>
+               <li>Define a hint attribute as a string object named edit_message.</li>
+                </ol>
+         </div>
+         <div data-role="collapsible" >
+            	<h3>Add a Button</h3>
+               <ol data-role="listview" data-theme="a">
+                   <li>In Android Studio, from the res/layout directory, edit the activity_my.xml file.</li>
+                  <li>Within the LinearLayout element, define a Button element immediately following the EditText element.</li>
+                   <li>Set the button's width and height attributes to "wrap_content" so the button is only as big as necessary to fit the button's text label.</li>
+                   
+                  <li></li> Define the button's text label with the android:text attribute; set its value to the button_send string resource you defined in the previous section.</li>
+
+                   
+             </ol>
+           
+                    
+               
+            </div>
+             <p>The layout is currently designed so that both the EditText and Button widgets are only as big as necessary to fit their content, as shown in figure below</p>
+                   
+                     <img src="image/edittext_wrap.png">  
+             	<a href="#" data-rel="back" data-icon="back">Back</a>
+      		<a href="#Step5" data-rel="dialog" data-icon="forward">Next</a>
+      <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+    
+        </div>
+    </div>
+</div>
+    <div data-role="page" id="Step5"  data-theme="a">
+      <div data-role="header">
+      	
+      		<a href="#home" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1>Step 5 of 5</h1>
+        
+      </div>
+      <div data-role="content">
+    
+            	<h3>Respond to the Send Button</h3>
+            	 <ol data-role="listview" data-theme="a">
+                   
+                   <li>In Android Studio, from the res/layout directory, edit the activity_my.xml file.</li>
+                   <li>To the Button element, add the android:onClick attribute.</li>
+                   <li>The android:onClick attribute’s value, "sendMessage", is the name of a method in your activity that the system calls when the user clicks the button.</li>
+                   <li>In the java/com.mycompany.myfirstapp directory, open the MyActivity.java file.</li>
+                   <li>Within the MyActivity class, add the sendMessage() method stub shown below.
+                   <p>public void sendMessage(View view){}</p>
+                   </li>
+                 </ol><br/>
+            	  <h4>In order for the system to match this method to the method name given to android:onClick, the signature must be exactly as shown. Specifically, the method must:
+</h4>
+                   <ul data-role="listview" data-theme="a">
+                   
+                   <li>Be public</li>
+                   <li>Have a void return value</li>
+                   <li>Have a View as the only parameter</li>
+                   </li>
+                 </ul>       
+        <br/>
+            <a href="#" data-rel="back" data-icon="back">Back</a>
+    <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home" >Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info" >AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+     </div>
+        </div>
+        
+         <div data-role="page" id="AboutMe"  data-theme="a">
+      <div data-role="header">
+      	<a href="#home"  data-icon="back">Back</a>
+      	
+        <h1>About Me</h1>
+        
+      </div>
+      <div data-role="content">
+    
+            	<p>My Name is Vaibhavi Desai.</p>
+            	<p>I have learnt languages such as Java, Android,C, C++</p>
+            	<p>I am currently a student and also work part time in a company.</p>
+            	<img src="image/My%20Image.jpg"></img>       
+    
+        </div>
+          <div data-role="footer" data-position="fixed">
+         <div data-role="navbar"  data-iconpos="right">
+        	<ul>
+            	<li><a href="#home" data-icon="home">Home</a></li>
+            	<li><a href="#AboutMe" data-icon="info">AboutMe</a></li>
+            </ul>
+        </div>
+      </div>
+</div>
+   
+    
+    
+   
+</body>
+</html>
